@@ -6,7 +6,7 @@ st.set_page_config(page_title="सहचर AI", page_icon="🤖")
 # Streamlit Secrets से API key लोड करें
 try:
     API_KEY = st.secrets["GEMINI_API_KEY"]
-    st.success("✅ API key secrets से लोड हुई")
+    # st.success("✅ API key secrets से लोड हुई")
 except Exception as e:
     st.error("❌ API key नहीं मिली। कृपया Streamlit Secrets में GEMINI_API_KEY डालें।")
     st.stop()
@@ -17,7 +17,7 @@ genai.configure(api_key=API_KEY)
 # मॉडल इनिशियलाइज़ करें (सही मॉडल नाम)
 try:
     model = genai.GenerativeModel('gemini-2.0-flash')
-    st.success("✅ Model लोड हो गया")
+   # st.success("✅ Model लोड हो गया")
 except Exception as e:
     st.error(f"❌ Model लोड करने में त्रुटि: {e}")
     st.stop()
