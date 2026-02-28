@@ -5,10 +5,10 @@ st.set_page_config(page_title="सहचर AI", page_icon="🤖")
 
 # Streamlit Secrets से API key लोड करें
 try:
-    API_KEY = st.secrets["GEMINI_API_KEY"]
+    API_KEY = st.secrets["DEEPSEEK_API_KEY"]
     # st.success("✅ API key secrets से लोड हुई")
 except Exception as e:
-    st.error("❌ API key नहीं मिली। कृपया Streamlit Secrets में GEMINI_API_KEY डालें।")
+    st.error("❌ API key नहीं मिली। कृपया Streamlit Secrets में DEEPSEEK_API_KEY डालें।")
     st.stop()
 
 # Gemini कॉन्फ़िगर करें
