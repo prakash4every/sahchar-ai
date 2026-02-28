@@ -1,6 +1,6 @@
 import streamlit as st
 from openai import OpenAI
-from streamlit_audiorecorder import audiorecorder
+#from streamlit_audiorecorder #import audiorecorder
 import speech_recognition as sr
 from gtts import gTTS
 import io
